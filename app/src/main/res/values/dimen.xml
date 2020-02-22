@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splashIconMarginTop">5dp</dimen>
+
+    <dimen name="progressIconMarginTop">5dp</dimen>
+
+    <dimen name="homeTextSize">18sp</dimen>
+
+    <dimen name="catagoryArrowIcon">18dp</dimen>
+
+    <dimen name="catagoryMarginLeft">0dp</dimen>
+
+
+    <dimen name="recyclerViewMarginTop">5dp</dimen>
+
+    <dimen name="textSize">18sp</dimen>
+
+    <dimen name="textMessageSize">16sp</dimen>
+
+    <dimen name="noMessageTextSize">20sp</dimen>
+
+    <dimen name="homeLayoutMarginTop">10dp</dimen>
+    <dimen name="homeLayoutMarginBottom">10dp</dimen>
+
+    <dimen name="activityMarginBottom">4dp</dimen>
+
+    <dimen name="homeScrollMarginBottom">4dp</dimen>
+
+    <dimen name="messageCardViewMarginLeft">24dp</dimen>
+    <dimen name="messageCardViewMarginTop">8dp</dimen>
+    <dimen name="messageCardViewMarginRight">24dp</dimen>
+    <dimen name="messageCardViewCardCornerRadious">10dp</dimen>
+    <dimen name="messageCardViewCardElevetion">2dp</dimen>
+
+    <dimen name="cardHomeFavRadious">5dp</dimen>
+
+    <dimen name="menuIcon">24dp</dimen>
+    <dimen name="menuIconMarginLeft">10dp</dimen>
+
+    <dimen name="menuIconBack">16dp</dimen>
+
+    <dimen name="catagoryTitleNameMagrinLeft">10dp</dimen>
+
+    <dimen name="icon_size">32dp</dimen>
+    <dimen name="fav_list_icon_size">24dp</dimen>
+
+    <dimen name="menu_icon_size">24dp</dimen>
+
+
+    <dimen name="menuPadding">14dp</dimen>
+
+    <dimen name="drawerWidth">280dp</dimen>
+
+    <dimen name="messageCatagoryPadding">12dp</dimen>
+    <dimen name="messageCatagoryNamePadding">10dp</dimen>
+
+    <dimen name="messageMarginLeft">24dp</dimen>
+    <dimen name="messageMarginRight">24dp</dimen>
+    <dimen name="messageMarginTop">8dp</dimen>
+    <dimen name="messageMarginBottom">10dp</dimen>
+
+
+    <dimen name="messageTextMarginLeft">16dp</dimen>
+    <dimen name="messageTextMarginRight">16dp</dimen>
+    <dimen name="messageTextMarginTop">16dp</dimen>
+    <dimen name="messageTextMarginBottom">16dp</dimen>
+    <dimen name="messageTextPadding">24dp</dimen>
+
+    <dimen name="messageViewHeight">1.5dp</dimen>
+    <dimen name="messageViewMarginRight">24dp</dimen>
+    <dimen name="messageViewMarginLeft">24dp</dimen>
+    <dimen name="messageViewMarginTop">5dp</dimen>
+    <dimen name="messageViewMarginBottom">10dp</dimen>
+
+    <dimen name="messageBottomMarginLeft">24dp</dimen>
+    <dimen name="messageBottomMarginRight">24dp</dimen>
+    <dimen name="messageBottomMarginTop">10dp</dimen>
+    <dimen name="messageBottomMarginBottom">10dp</dimen>
+    <dimen name="messageBottomHeight">30dp</dimen>
+
+    <dimen name="messageIconTextMarginLeft">5dp</dimen>
+    <dimen name="messageIconTextMarginRight">5dp</dimen>
+    <dimen name="messageIconTextMarginTop">5dp</dimen>
+    <dimen name="messageIconTextMarginBottom">5dp</dimen>
+
+    <dimen name="messageIconHeight">18dp</dimen>
+    <dimen name="messageIconWidth">18dp</dimen>
+
+
+</resources>

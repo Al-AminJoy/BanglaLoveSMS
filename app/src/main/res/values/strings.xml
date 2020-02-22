@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Bangla SMS</string>
+    <string name="full_app_name">বাংলা লাভ এসএমএস</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!--AdMob Ads IDs-->
+    <string name="admob_ad_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="industrial_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!--Category Titles-->
+    <string name="missing">মনে পরার </string>
+    <string name="wishing">শুভ কামনা </string>
+    <string name="friendship">বন্ধুত্ব</string>
+    <string name="goodmorning">শুভ সকাল  </string>
+    <string name="love">প্রেম/ভালোবাসা </string>
+    <string name="birthday">জন্মদিন </string>
+    <string name="funny">মজার</string>
+    <string name="eidMubarak">ঈদ মোবারক</string>
+    <string name="pohela_boishakh">পহেলা বৈশাখ</string>
+    <string name="goodNight">শুভ রাত্রি</string>
+    <string name="poetSpeech">কবি কথা  </string>
+    <string name="home">বাংলা লাভ এসএমএস</string>
+    <string name="favourite">প্রিয় এসএমএস</string>
+
+    <!--Kamrul txt-->
+    <string name="share_app_barcode_txt">অন্যান্য অ্যাপ্লিকেশনের মাধ্যমে শেয়ার করুন</string>
+    <string name="no_favourite_message">কোন প্রিয় এসএমএস</string>
+
+    <!--Feedback text-->
+    <string name="feedbackmsg">আপনার মূল্যবান মতামত প্রেরণ করুন।</string>
+    <string name="feedback_title">ফিডব্যাক</string>
+
+</resources>

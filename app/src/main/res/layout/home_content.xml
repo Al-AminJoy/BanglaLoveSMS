@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/homeToolbar"
+        layout="@layout/toolbar_home_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homeToolbar"
+        android:layout_above="@+id/avBannerHomeId"
+        android:layout_marginBottom="@dimen/homeScrollMarginBottom"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeLoveId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/love"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeMissingId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/missing"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize"
+
+
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeWishingId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/wishing"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeFriendshipId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/friendship"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeGoodMorningId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/goodmorning"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeBirthdayId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/birthday"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeFunnyId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/funny"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeEidMubarakId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/eidMubarak"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomePohelaBoishakhId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/pohela_boishakh"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeGoodNightId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/goodNight"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomePoetSpeechId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/messageMarginLeft"
+                android:layout_marginTop="@dimen/messageMarginTop"
+                android:layout_marginRight="@dimen/messageMarginRight"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="3dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/messageCatagoryPadding"
+
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_message_icon" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/catagoryMarginLeft"
+                        android:layout_weight="3"
+                        android:text="@string/poetSpeech"
+                        android:textColor="@color/txtColorCatagory"
+                        android:textSize="@dimen/homeTextSize" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/catagoryArrowIcon"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arraw_icon" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avBannerHomeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adUnitId="@string/banner_ad_id"
+        >
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

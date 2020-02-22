@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_share"
+        android:id="@+id/qrimg"
+        tools:ignore="ContentDescription"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sharebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qrimg"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="অন্যান্য অ্যাপ্লিকেশনের মাধ্যমে শেয়ার করুন"
+        style="@style/coloredbutton"/>
+</RelativeLayout>

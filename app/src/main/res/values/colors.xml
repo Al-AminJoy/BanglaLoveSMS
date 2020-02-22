@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#4e4385</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <!-- SMS APP -->
+    <color name="basicColor">#5C4FA1</color>
+    <color name="txtColor">#000</color>
+    <color name="whiteColor">#fff</color>
+    <color name="backgroundColor">#DDDDDD</color>
+    <color name="redColor">#F00808</color>
+    <color name="drawerBackground">#4e4385</color>
+    <color name="txtColorCatagory">#4e4385</color>
+</resources>
